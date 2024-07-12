@@ -1,0 +1,116 @@
+:root {
+  --color-primary: #3498db;
+  --color-secondary: #1cb698;
+  --color-accent: #e74c3c;
+  --color-background: #2a2d2e;
+  --color-surface: #ffffff;
+  --color-text-primary: #2c3e50;
+  --color-text-secondary: #95a5a6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  height: 100vh;
+  font-family: 'Prompt', sans-serif;
+}
+
+.contenedor {
+  width: 600px;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Perfil */
+.contenedor-perfil h1 {
+  color: var(--color-secondary);
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contenedor-perfil #fecha {
+  color: var(--color-surface);
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Agregar Tarea */
+.contenedor-agregar-tarea {
+  background-color: var(--color-surface);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  margin: 10px auto;
+  padding: 15px;
+  gap: 30px;
+  border-radius: 5px;
+}
+
+.contenedor-agregar-tarea input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 15px;
+}
+
+.contenedor-agregar-tarea i {
+  color: var(--color-secondary);
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contenedor-agregar-tarea i:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.contenedor-agregar-tarea input::placeholder {
+  color: var(--color-text-primary);
+  font-size: 14px;
+}
+
+/* Listado Tareas */
+.contenedor-listado-tareas ul {
+  margin-top: 3rem;
+  min-height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contenedor-listado-tareas li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-text-primary);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.contenedor-listado-tareas i {
+  font-size: 15px;
+  color: var(--color-secondary);
+}
+
+.contenedor-listado-tareas i:hover {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.contenedor-listado-tareas p {
+  font-size: 14px;
+  color: var(--color-surface);
+}
+
+.completada {
+  text-decoration: line-through;
+}
